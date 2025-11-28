@@ -542,23 +542,9 @@ We welcome contributions! To contribute:
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
----
-
-## Contact & Support
-
-**Project Maintainer:** Healthcare Analytics Team
-**Email:** analytics@healthcare.org
-**Issues:** Report bugs via GitHub Issues
-
----
-
 ## Acknowledgments
 
-- **Data Source:** SCHHS Stage 3 Nursing Workforce Dataset
+- **Data Source:** Queenaland Hospital Data
 - **Libraries:** scikit-learn, pandas, numpy, matplotlib, seaborn
 - **Methodology:** Time-series forecasting best practices from academic literature
 
