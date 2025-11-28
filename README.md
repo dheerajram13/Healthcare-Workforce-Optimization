@@ -10,6 +10,8 @@
 
 This project develops a machine learning model to predict nursing workforce requirements for hospital wards, enabling data-driven staffing decisions and optimal resource allocation.
 
+**Data Source:** Queensland Hospital, Australia - 2023 nursing workforce data across 5 hospital wards.
+
 **Business Impact:**
 - Predicts quarterly nursing staffing requirements with 96.8% accuracy
 - Identifies critical understaffing periods and high-risk wards
@@ -69,7 +71,7 @@ This project develops a machine learning model to predict nursing workforce requ
 
 ### Dataset: `AO8_Stage 3_At home.csv`
 
-**Description:** Historical nursing workforce data for 2023
+**Description:** Historical nursing workforce data from a Queensland Hospital, Australia (2023)
 
 | Field | Description | Type |
 |-------|-------------|------|
@@ -195,6 +197,7 @@ Parameters tuned:
 ### Prerequisites
 - Python 3.8 or higher
 - pip package manager
+- Data file: `AO8_Stage 3_At home.csv` (not in git, obtain from data source)
 
 ### Setup
 
@@ -203,18 +206,22 @@ Parameters tuned:
 cd Healthcare-Workforce-Optimization
 ```
 
-2. **Create virtual environment:**
+2. **Add data files** (not included in git):
+   - Place `AO8_Stage 3_At home.csv` in the project root
+   - Optionally add `Nursing Workforce Executive Insights Report.pdf`
+
+3. **Create virtual environment:**
 ```bash
 python -m venv ml_env
 source ml_env/bin/activate  # On Windows: ml_env\Scripts\activate
 ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn jupyter joblib
 ```
 
-4. **Verify installation:**
+5. **Verify installation:**
 ```bash
 python -c "import pandas, numpy, sklearn; print('All dependencies installed!')"
 ```
@@ -274,8 +281,8 @@ class Config:
 Healthcare-Workforce-Optimization/
 │
 ├── nursing_workforce_analysis.ipynb    # Main analysis notebook
-├── AO8_Stage 3_At home.csv            # Dataset (keep in git)
-├── Nursing Workforce Executive Insights Report.pdf  # Report (keep in git)
+├── AO8_Stage 3_At home.csv            # Dataset (gitignored - add locally)
+├── Nursing Workforce Executive Insights Report.pdf  # Report (gitignored - add locally)
 │
 ├── models/                             # Saved models (gitignored)
 │   └── nursing_workforce_model.joblib
@@ -566,6 +573,3 @@ This project is licensed under the MIT License - see LICENSE file for details.
 - ✅ Q1 2024 predictions with 99% confidence intervals
 - ✅ Comprehensive documentation and visualizations
 
----
-
-**Built with ❤️ for better healthcare workforce planning**

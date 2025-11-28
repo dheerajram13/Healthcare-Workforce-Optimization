@@ -41,6 +41,14 @@ ml_env/
 *~
 .DS_Store
 
+# Data files (exclude from git)
+*.csv
+*.xlsx
+*.xls
+
+# PDF files (exclude from git)
+*.pdf
+
 # Model artifacts
 models/*.pkl
 models/*.joblib
@@ -60,7 +68,8 @@ logs/
 temp/
 tmp/
 
-# Output files (keep data, csv, pdf in git)
+# Output files
 outputs/*.png
 outputs/*.jpg
+outputs/*.json
 !outputs/.gitkeep
